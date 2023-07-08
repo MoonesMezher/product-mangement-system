@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CRUDS</title>
+        <link rel="stylesheet" href="scss/index.css">
+    </head>
+    <body>
+        <main class="system">
+            <div class="title">
+                <h2>cruds</h2>
+                <p>product mangement system</p>
+            </div>
+            <div class="data">
+                <form>
+                    <input type="text" id="title" placeholder="title">
+                    <div class="total-data">
+                        <input type="number" min="0" id="price" placeholder="price">
+                        <input type="number" min="0" id="taxes" placeholder="taxes">
+                        <input type="number" min="0" id="ads" placeholder="ads">
+                        <input type="number" min="0" id="discount" placeholder="discount">
+                        <span class="total">
+                            total
+                        </span>
+                    </div>
+                    <input type="number" id="count" placeholder="count">
+                    <input type="text" id="category" placeholder="category">
+                    <div id="create">create</div>
+                    <input type="search" placeholder="search" id="search">
+                    <div class="search-control">
+                        <div class="by-title" id="title">search by title</div>
+                        <div class="by-category" id="category">search by category</div>
+                    </div>
+                    <div class="get-function">
+                        <div class="by-count" id="count-fun">count of productes</div>
+                        <div class="by-sum-price" id="sum-fun">total of prices</div>
+                    </div>
+                </form>
+                <div class="delete-all">delete all (<span></span>)</div>
+            </div>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>id</th>
+                        <th>title</th>
+                        <th>price</th>
+                        <th>taxes</th>
+                        <th>ads</th>
+                        <th>discount</th>
+                        <th>total</th>
+                        <th>category</th>
+                        <th>update</th>
+                        <th>delete</th>
+                    </tr>
+                    <tbody class="tbody">
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <script src="js/index.js"></script>
+    </body>
+</html>

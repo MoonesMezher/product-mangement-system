@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    .system {
+        margin: 20px;
+        padding: 20px;
+        @media  screen and (max-width: 510px) {
+            width: 100%;
+        }
+        .title {
+            text-align: center;
+            h2, p {
+                color: white;
+                text-transform: uppercase;
+            }
+        }
+        .data {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            form {
+                margin: 10px 0;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                input {
+                    padding: 10px 5px;
+                    background-color: #111;
+                    border: none;
+                    transition: .5s ease;
+                    &:focus {
+                        outline: none;
+                        transform: scale(1.1);
+                        background-color: black;
+                    }
+                    color: white;
+                }
+                #create {
+                    border-radius: 7px;
+                    background-color: blueviolet;
+                    padding: 10px 5px;
+                    transition: .5s ease;
+                    cursor: pointer;
+                    opacity: 80%;
+                    color: white;
+                    text-align: center;
+                    &:hover {
+                        opacity: 100%;
+                    }
+                }
+                .total-data {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    width: 100%;
+                    @media  screen and (max-width: 767px) {
+                        flex-direction: column;
+                    }
+                    .total {
+                        background-color: red;
+                        padding: 5px;
+                        text-align: center;
+                        color: white;
+                        border-radius: 2px;
+                        @media  screen and (max-width: 767px) {
+                            width: 100%;
+                        }
+                    }
+                    input {
+                        @media  screen and (max-width: 767px) {
+                            width: 100%;
+                        }
+                    }
+                }
+                .search-control {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 10px;
+                    @media  screen and (max-width: 767px) {
+                        flex-direction: column;
+                    }
+                    div {
+                        color: white;
+                        text-align: center;
+                        flex-grow: 1;
+                        padding: 5px;
+                        border-radius: 7px;
+                        background-color: blueviolet;
+                        cursor: pointer;
+                        opacity: 80%;
+                        transition: .5s ease;
+                        &:hover {
+                            opacity: 100%;
+                        }
+                    }
+                }
+                .get-function {
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 10px;
+                    @media  screen and (max-width: 767px) {
+                        flex-direction: column;
+                    }
+                    div {
+                        color: white;
+                        text-align: center;
+                        flex-grow: 1;
+                        padding: 5px;
+                        border-radius: 7px;
+                        background-color: blueviolet;
+                        cursor: pointer;
+                        opacity: 80%;
+                        transition: .5s ease;
+                        &:hover {
+                            opacity: 100%;
+                        }
+                    }
+                }
+            }
+            .delete-all {
+                background-color: blueviolet;
+                padding: 5px;
+                color: white;
+                text-align: center;
+                border-radius: 7px;
+                cursor: pointer;
+                opacity: 80%;
+                transition: .5s ease;
+                display: none;
+                &:hover {
+                    opacity: 100%;
+                }
+            }
+        }
+        .table {
+            overflow: auto;
+            max-height: 400px;
+            margin-top: 15px;
+            &::-webkit-scrollbar {
+                width: 15px;
+            }
+            &::-webkit-scrollbar-track {
+                background-color: white;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: blueviolet;
+                &:hover {
+                    background-color: #111;
+                }
+            }
+            table {
+                width: 100%;
+                text-align: center;
+                tr {
+                    color: white;
+                    
+                    th {
+                        text-transform: uppercase;
+                        padding: 5px;
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            padding: 5px;
+                            font-size: .9rem;
+                            button {
+                                cursor: pointer;
+                                background-color: blueviolet;
+                                border-radius: 5px;
+                                padding: 5px;
+                                color: white;
+                                outline: none;
+                                border: none;
+                                opacity: 80%;
+                                transition: .5s ease;
+                                &:hover {
+                                    opacity: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
